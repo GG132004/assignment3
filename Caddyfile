@@ -1,0 +1,6 @@
+# Replace example.com with your application's domain
+localhost:443 {
+  # app1server:3000 is the docker container running the Node.js application
+  # in our case it's exposed on port 3000
+  reverse_proxy app2server:3000  
+}
